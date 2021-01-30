@@ -16,16 +16,16 @@ project "DPM_OpenGL"
    objdir "obj/%{cfg.buildcfg}"
    
    -- include dirs --
-   includedirs { "include/" }
+   includedirs { "inc/" }
    
    -- src files --
-   files { "src/**.h", "src/**.cpp", "include/**.h" }
+   files { "src/**.h", "src/**.cpp", "inc/**.h" }
    
    -- lib dirs --
    libdirs { "lib/" }
    
    -- libs --
-   --links { "references" }
+   links { "glfw3", "gdi32" }
 
    filter "configurations:Debug"
       defines { "DEBUG" }
