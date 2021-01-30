@@ -1,0 +1,10 @@
+# build
+obj
+bin
+
+# executables
+*.exe
+
+# makefiles
+Makefile
+*.make
